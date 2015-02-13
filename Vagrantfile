@@ -17,9 +17,9 @@ Vagrant.configure("2") do |config|
   end
 
   # Forward guest ports for Mountebank
-  # Traffic -> imposter
-  config.vm.network "forwarded_port", guest: 2525, host: 2525
+  # Send traffic -> imposter
+  config.vm.network "forwarded_port", guest: 4545, host: 4545
   # Query imposter
-  config.vm.network "forwarded_port", guest: 4545, host: 4545  
+  config.vm.network "forwarded_port", guest: 2525, host: 2525
 
 end
