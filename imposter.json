@@ -5,6 +5,9 @@
       "responses": [{ 
         "is": { 
           "statusCode": 200,
+          "headers": {
+              "Content-Type": "text/plain"
+          },
           "body": "Successful Snowplow POST Request"
         }
       }],
@@ -26,6 +29,9 @@
       "responses": [{ 
         "is": { 
           "statusCode": 200,
+          "headers": {
+              "Content-Type": "text/plain"
+          },
           "body": "Successful Snowplow GET Request"
         }
       }],
